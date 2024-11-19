@@ -1,0 +1,18 @@
+def scoreCalculation(testCases):
+    results=[]
+    for case in testCases:
+        X,N=case
+        pointsPerCase=X//10
+        score=pointsPerCase*N
+        results.append(score)
+    return results
+
+T = int(input())
+testCases=[]
+for i in range(T):
+    X,N=map(int,input().split())
+    testCases.append((X,N))
+
+scores=scoreCalculation(testCases)
+for score in scores:
+    print(score)
