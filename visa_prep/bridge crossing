@@ -1,0 +1,6 @@
+a,b,c=map(int,input().split())
+if b>=c:
+    maxMangoes=0
+else:
+    maxMangoes=(c-b)//a
+print(maxMangoes)
