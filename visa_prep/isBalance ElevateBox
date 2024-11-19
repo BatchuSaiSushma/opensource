@@ -1,0 +1,15 @@
+n=int(input())
+a=input().split()
+a=[int(a[i]) for i in range(n)]
+b=[]
+for i in range(n):
+    left_weight=0
+    for j in range(i):
+        left_weight+=a[j]
+    right_weight=0
+    for j in range(i+1,n):
+        right_weight+=a[j]
+    balance=abs(left_weight-right_weight)
+    b.append(balance)
+for i in range(n):
+    print(b[i], end=" ")
