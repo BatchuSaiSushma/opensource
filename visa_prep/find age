@@ -1,0 +1,4 @@
+x = int(input())
+ageDifference=25-10
+vigneshAge=x-ageDifference
+print(vigneshAge)
