@@ -1,0 +1,13 @@
+def check_winner(number):
+    digit_sum=0
+    for char in number:
+        digit_sum+=ord(char)-ord('0')
+        
+    if digit_sum % 2==0:
+        return "Vignesh"
+    else:
+        return "Charan"
+    
+number = input()
+
+print(check_winner(number))
