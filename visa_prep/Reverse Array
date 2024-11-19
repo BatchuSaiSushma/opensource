@@ -1,0 +1,10 @@
+def reverseArray(n,A):
+    reversedA=[0]*n
+    for i in range(n):
+        reversedA[i]=A[n-i-1]
+    print(" ".join(str(x) for x in reversedA))
+    
+n=int(input())
+A=list(map(int,input().split()))
+
+reverseArray(n,A)
